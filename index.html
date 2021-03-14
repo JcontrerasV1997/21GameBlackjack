@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Blackjack</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="titulo">21 BLACKJACK</header>
+
+    <div class="row mt-2">
+      <div id="divBotones" class="col text-center">
+        <button id="btnNuevo" class="btn btn-danger">Nuevo Juego</button>
+        <button id="btnPedir" disabled="disabled" class="btn btn-primary">
+          Pedir carta
+        </button>
+        <button id="btnDetener" disabled="disabled" class="btn btn-primary">
+          Detener
+        </button>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card border-info mx-sm-1 p-3">
+        <div class="card border-info shadow text-info p-3 my-card">
+          <span class="fa fa-car" aria-hidden="true"></span>
+        </div>
+        <div class="text-info text-center mt-3"><h4>Victorias</h4></div>
+        <hr />
+        <div class="text-info text-center mt-3"><h4>Jugador </h4></div>
+        <div > <h4 id="victoriaJugador"></h4></div>
+        <div class="text-info text-center mt-2"><h4>Computador</h4></div>
+        <div > <h4 id="victoriaComputadora"></h4></div>
+      </div>
+    </div>
+
+    <div class="row mt-2">
+      <div id="jugador" class="col text-center">
+        <h1>Jugador 1 - <small>0</small></h1>
+        <div id="jugador-cartas" class="divCartas">
+          <!-- Cartas -->
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-2">
+      <div id="computador" class="col text-center">
+        <h1>Computadora - <small>0</small></h1>
+        <div id="computadora-cartas" class="divCartas">
+          <!-- <img class="carta" src="assets/cartas/3C.png"> -->
+        </div>
+      </div>
+    </div>
+   
+
+    <script src="assets/js/underscore-min.js"></script>
+    <script src="assets/js/juego.js"></script>
+
+    <script>
+    
+      document.querySelector("#btnNuevo").addEventListener("click", () => {
+        miModulo.nuevoJuego();
+      });
+    </script>
+  </body>
+</html>
