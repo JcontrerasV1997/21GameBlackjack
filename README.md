@@ -1,9 +1,11 @@
 # 21GameBlackjack
 
 ### Notas
-- practica javascript aplicando patron modulo con uso estricto. aqui aplica pruebas de conocimientos en javascript.
+- Practica javascript aplicando patron modulo con uso estricto. aqui aplica pruebas de conocimientos en javascript.
 
-- sin la implementacion de un bundle como webpack webpack. 
+- Este repositorio no posee la implementacion de un bundle como webpack. 
 
-- utilizando libreria underscore para manipular arrays
+- Utilizando libreria underscore para manipular arrays.
+
+- Demostracion para el manejo del dom
 
